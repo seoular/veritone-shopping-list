@@ -1,5 +1,6 @@
 import './App.css';
 import ShoppingList from './Components/ShoppingList';
+// import LoadingScreen from './Components/LoadingScreen';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </div>
       <div className="shopBody">
         <ShoppingList/>
+        {/* <LoadingScreen/> */}
       </div>
     </div>
   );

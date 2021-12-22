@@ -1,0 +1,36 @@
+.loadingScreenContainer{
+	/* Group 3 */
+
+	position: absolute;
+	width: 92px;
+	height: 86px;
+	left: 594px;
+	top: 178px; 
+}
+
+.loadingScreenRectangle{
+	/* Rectangle 7 */
+
+	position: absolute;
+	width: 56px;
+	height: 55px;
+	left: 630px;
+	top: 178px;
+
+	background: #FFFFFF;
+	z-index: 1;
+}
+
+.loadingScreenEllipse{
+	/* Ellipse 1 */
+
+	position: absolute;
+	width: 76px;
+	height: 76px;
+	left: 594px;
+	top: 188px;
+
+	border: 3px solid #4D81B7;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
