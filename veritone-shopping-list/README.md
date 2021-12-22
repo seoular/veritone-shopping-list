@@ -1,9 +1,4 @@
-This is Sang Han's coding assessment for Veritone. 
 
-
-
-
-Below are steps to launch the application through the Create React App:
 
 # Getting Started with Create React App
 
