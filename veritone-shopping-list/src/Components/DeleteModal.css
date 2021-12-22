@@ -1,0 +1,129 @@
+.deleteModalTitle{
+	/* Modal Title */
+
+	position: absolute;
+	width: 102px;
+	height: 24px;
+	left: 30px;
+	top: 30px;
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	/* identical to box height, or 133% */
+
+	letter-spacing: -1.30385e-09px;
+
+	/* Typography/Primary Font */
+
+	color: #2A323C;
+
+}
+
+.deleteModalMessage{
+	/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat id tortor et feugiat. Nulla facilisi. Quisque a dui sit amet tellus scelerisque laoreet. */
+
+	position: absolute;
+	height: 80px;
+	left: 30px;
+	right: 30px;
+	top: 64px;
+
+	/* Body (2) 14px Regular */
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	/* or 143% */
+
+	letter-spacing: -1.30385e-09px;
+
+	/* Typography/Secondary Font */
+
+	color: #5C6269;
+}
+
+.deleteModalButtonGroup{
+	/* Frame 8 */
+
+	/* Auto Layout */
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: absolute;
+	width: 154px;
+	height: 36px;
+	right: 30px;
+	bottom: 30px;
+}
+
+.ui.button.deleteModalCancelButton{
+	/* Button */
+
+	/* Auto Layout */
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 15px;
+
+	position: static;
+	width: 73px;
+	height: 35px;
+	right: 81px;
+	bottom: 1px;
+
+	border-radius: 4px;
+
+	/* Inside Auto Layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+
+	background:white;
+}
+
+.ui.button.deleteModalDeleteButton{
+	/* Button */
+
+	/* Auto Layout */
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 15px;
+
+	position: static;
+	width: 71px;
+	height: 36px;
+	right: 0px;
+	bottom: 0px;
+
+	/* Blue 3 (Button Default) */
+
+	background: #1871E8;
+	border-radius: 4px;
+
+	color:white;
+}
+
+.ui.modal.transition.visible.active.deleteModal{
+	/* Modal (White) */
+
+	position: absolute;
+	width: 410px;
+	height: 240px;
+	left: 457px;
+	top: 184px;
+}
