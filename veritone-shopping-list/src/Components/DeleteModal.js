@@ -34,7 +34,7 @@ class DeleteModal extends React.Component {
         open={this.state.open}
         trigger={
           <Button icon>
-            <div className="material-icons">delete</div>
+            <div className="material-icons-outlined">delete</div>
           </Button>
         }
       >

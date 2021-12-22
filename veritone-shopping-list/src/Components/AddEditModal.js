@@ -69,7 +69,7 @@ class AddEditModal extends React.Component {
               {this.props.addMessage}
             </Button>
           : <Button icon>
-              <div className="material-icons">edit</div>
+              <div className="material-icons-outlined">edit</div>
             </Button>
         }
       > 
