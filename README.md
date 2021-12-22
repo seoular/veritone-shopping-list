@@ -1,1 +1,1 @@
-# veritone-shopping-list
+This is Sang Han's coding assessment for Veritone. 
