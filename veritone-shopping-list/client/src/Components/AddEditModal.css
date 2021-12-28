@@ -1,0 +1,545 @@
+.ui.modal.transition.visible.active{
+	/* Panel */
+	position: absolute;
+	width: 560px;
+	height: 768px;
+	left: 0px;
+	top: 0px;
+
+	background: #FFFFFF;
+	box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+}
+
+.shoppingListPanelHeader{
+	/* Panel Header Background */
+
+	position: absolute;
+	height: 64px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+
+	background: #FAFAFA;
+}
+
+.shoppingListPanelHeaderText{
+	/* Panel Title */
+
+	position: absolute;
+	width: 113px;
+	height: 23px;
+	left: 30px;
+	top: 20px;
+
+	font-family: Dosis;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 23px;
+	/* identical to box height */
+
+	letter-spacing: 0.25px;
+	text-transform: uppercase;
+
+	/* Dark 3 (Secondary Font) */
+
+	color: #5C6269;
+}
+
+.addAnItem{
+	/* Add an Item */
+
+	position: absolute;
+	width: 99px;
+	height: 24px;
+	left: 30px;
+	top: 92px;
+
+	/* Nunito 18px Regular (H2) */
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	/* identical to box height, or 133% */
+
+	letter-spacing: -1.30385e-09px;
+
+	/* Typography/Primary Font */
+
+	color: #2A323C;
+}
+
+
+
+
+.addYourNewItemBelow{
+	/* Add your new item below */
+
+	position: absolute;
+	width: 185px;
+	height: 22px;
+	left: 30px;
+	top: 121px;
+
+	/* Nunito 16px Regular */
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 22px;
+	/* identical to box height, or 137% */
+
+	letter-spacing: -1.30385e-09px;
+
+	/* Typography/Secondary Font */
+
+	color: #5C6269;
+}
+
+.itemNameInputContainer{
+	/* Form Field Default */
+
+	position: absolute;
+	width: 504px;
+	height: 52px;
+	left: 30px;
+	top: 156px;
+}
+
+.itemNameInput{
+	/* Input Field */
+
+	position: absolute;
+	height: 52px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+
+	background: #FFFFFF;
+	/* Grey 4 (Stroke, Line Divider, Disabled) */
+
+	border: 1px solid #D5DFE9;
+	box-sizing: border-box;
+	border-radius: 4px;
+
+	width:100%;
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	/* identical to box height, or 137% */
+
+	letter-spacing: -1.30385e-09px;
+
+	/* Grey 3 */
+
+	color: #9CA8B4;
+
+	mix-blend-mode: normal;
+}
+
+.itemNameInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  	/* Form Field Text */
+
+	position: absolute;
+	width: 79px;
+	height: 22px;
+	left: 15px;
+	top: 16px;
+
+	/* Body (1) 16px Regular */
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	/* identical to box height, or 137% */
+
+	letter-spacing: -1.30385e-09px;
+
+	/* Grey 3 */
+
+	color: #9CA8B4;
+
+	mix-blend-mode: normal;
+}
+
+.descriptionInputContainer{
+	/* Form Field Default */
+
+	position: absolute;
+	width: 504px;
+	height: 140px;
+	left: 30px;
+	top: 226px;
+}
+
+.descriptionInput{
+	/* Input Field */
+	width:100%;
+
+	position: absolute;
+	height: 140px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+
+	background: #FFFFFF;
+	/* Grey 4 (Stroke, Line Divider, Disabled) */
+
+	border: 1px solid #D5DFE9;
+	box-sizing: border-box;
+	border-radius: 4px;
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	/* identical to box height, or 137% */
+
+	letter-spacing: -1.30385e-09px;
+
+	/* Grey 3 */
+
+	color: #9CA8B4;
+
+	mix-blend-mode: normal;
+}
+
+
+
+.descriptionInput::placeholder{
+	/* Form Field Text */
+
+	position: absolute;
+	width: 82px;
+	height: 22px;
+	left: 15px;
+	top: 16px;
+
+	/* Body (1) 16px Regular */
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	/* identical to box height, or 137% */
+
+	letter-spacing: -1.30385e-09px;
+
+	/* Grey 3 */
+
+	color: #9CA8B4;
+
+	mix-blend-mode: normal;
+}
+
+.purchasedLabel{
+	/* Form Field Text */
+
+	position: absolute;
+	width: 76px;
+	height: 22px;
+	left: 60px;
+	top: 460px;
+
+	/* Body (1) 16px Regular */
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	/* identical to box height, or 137% */
+
+	letter-spacing: -1.30385e-09px;
+
+	/* Grey 3 */
+
+	color: #9CA8B4;
+
+	mix-blend-mode: normal;
+}
+
+.checkBoxContainer > .ui.fitted.checkbox{
+	/* Vector */
+
+	position: absolute;
+	left: 5.18%;
+	right: 91.61%;
+	top: 60.16%;
+	bottom: 37.5%;
+
+	color: #C6C6C6;
+}
+
+
+
+
+.quantityInput{
+	/* Dropdown Default */
+
+	position: absolute;
+	width: 504px;
+	height: 52px;
+	left: 30px;
+	top: 380px;
+}
+
+.quantityInput > .ui.fluid.selection.dropdown{
+	height:100%;
+}
+
+.quantityInput > .ui.fluid.selection.dropdown > .divider.default.text, .divider.text{
+	/* File Name */
+
+	position: absolute;
+	width: 85px;
+	height: 22px;
+	left: 15px;
+	top: 16px;
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	/* identical to box height */
+
+	letter-spacing: -1.21072e-09px;
+
+	/* Grey 3 */
+
+	color: #9CA8B4;
+}
+
+.quantityInput > .ui.fluid.selection.dropdown > .dropdown.icon{
+	/* Arrow Down */
+
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 20px;
+	top: 14px;
+
+	color: #555F7C;
+}
+
+.material-icons-outlined{
+	/* Vector */
+
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.material-icons{
+	/* Vector */
+
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.addButtonContainer > .ui.button.addButton{
+
+	width: 151px;
+	margin-right:0px;
+	height: 36px;
+	left: 564px;
+	top: 301px;
+
+	/* Blue 3 (Button Default) */
+
+	background: #1871E8;
+	border-radius: 4px;
+	color: #FFFFFF;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+
+.shoppingListAddButtonContainer > .ui.button.addButton{
+	width: 89px;
+	margin-right:0px;
+	height: 36px;
+	left: 1100px;
+	top: 99px;
+
+	/* Blue 3 (Button Default) */
+
+	background: #1871E8;
+	border-radius: 4px;
+		
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	/*line-height: 20px;*/
+	/* identical to box height, or 143% */
+
+	text-align: center;
+	letter-spacing: -1.30385e-09px;
+
+	/* White */
+
+	color: #FFFFFF;
+}
+
+
+
+.ui.button.hideButtonContainer{
+	/* Hide */
+
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 20px;
+	top: 20px;
+	background:inherit;
+}
+
+.ui.button.addTaskButton{
+	/* Button */
+
+	/* Auto Layout */
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 15px;
+
+	position: absolute;
+	width: 90px;
+	height: 36px;
+	left: 450px;
+	top: 706px;
+
+	/* Blue 3 (Button Default) */
+
+	background: #1871E8;
+	border-radius: 4px;
+}
+
+.ui.button.addTaskButton > .addTaskButtonText{
+	/* Button Text */
+
+	position: static;
+	width: 60px;
+	height: 20px;
+	left: calc(50% - 60px/2);
+	top: calc(50% - 20px/2);
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+
+	text-align: center;
+	letter-spacing: -1.30385e-09px;
+
+	/* White */
+
+	color: #FFFFFF;
+
+
+	/* Inside Auto Layout */
+
+	/*flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;*/
+}
+
+.ui.button.cancelButton{
+	/* Button */
+
+	/* Auto Layout */
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 15px;
+
+	position: absolute;
+	width: 73px;
+	height: 35px;
+	left: 360px;
+	top: 706px;
+
+	border-radius: 4px;
+	background:white;
+}
+
+.ui.button.cancelButton > .cancelButtonText{
+	/* Label */
+
+	position: static;
+	width: 43px;
+	height: 19px;
+	left: 15px;
+	top: 8px;
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	/* identical to box height */
+
+	letter-spacing: -1.30385e-09px;
+
+	/* Dark 2 (Primary Font) */
+
+	color: #2A323C;
+
+	/* Inside Auto Layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+
+
+.characterCount{
+	/* 0/100 */
+
+	position: absolute;
+	width: 33px;
+	height: 16px;
+	left: 490px;
+	top: 340px;
+
+	/* Nunito 12px Regular */
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	/* identical to box height, or 133% */
+
+	/* Typography/Secondary Font */
+
+	color: #5C6269;
+}
+
