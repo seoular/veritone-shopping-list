@@ -23,7 +23,6 @@ const ShoppingReducer = (state, action) => {
       return {...state, shoppingList: newShoppingList3}
     case 'INCREMENT_ADD_KEY':
       return {...state,  addKey: state.addKey+1}
-    case 'SELECT':
     default: return state;   
   }
 }

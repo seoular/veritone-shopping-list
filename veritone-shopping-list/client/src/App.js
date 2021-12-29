@@ -8,18 +8,16 @@ function App() {
     <div className="App">
       <Sidebar.Pushable as={Segment}>
         <Sidebar.Pusher>
-          {/* <Segment > */}
-            <div className="shopHeader">
-              <div className="shopTitle">
-                SHOPPING LIST
-              </div>  
-            </div>
-            <div className="shopBody">
-              <ShoppingList/>
-              {/* <LoadingScreen/> */}
-            </div>
-          {/* </Segment> */}
-        </Sidebar.Pusher>
+          <div className="shopHeader">
+            <div className="shopTitle">
+              SHOPPING LIST
+            </div>  
+          </div>
+          <div className="shopBody">
+            <ShoppingList/>
+            {/* <LoadingScreen/> */}
+          </div>
+      </Sidebar.Pusher>
       </Sidebar.Pushable>
     </div>
   );

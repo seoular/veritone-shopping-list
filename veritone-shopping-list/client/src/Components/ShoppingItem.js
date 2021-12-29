@@ -4,7 +4,7 @@ import { Segment, Checkbox, Button} from 'semantic-ui-react'
 // import AddEditModal from './AddEditModal';
 import AddEditSidebar from './AddEditSidebar';
 import DeleteModal from './DeleteModal';
-import {deleteItem, selectItem} from '../Actions/ShoppingActions';
+import {deleteItem} from '../Actions/ShoppingActions';
 import './ShoppingItem.css';
 
 class ShoppingItem extends React.Component {
@@ -28,19 +28,24 @@ class ShoppingItem extends React.Component {
 
     return (
       <Segment style={this.state.checked ? {background:"rgba(213, 223, 233, 0.17)"} : {}}>
+
         <Checkbox  onChange={() => {this.setState({checked: !this.state.checked})}} />
+
         <div className="topHalf" style={this.state.checked ?{color: "#4D81B7", textDecoration:"line-through"} :  {display:"inline-block", marginRight: "10px"}}> 
           {this.props.itemName}
         </div>
+
         <div className="bottomHalf" style={this.state.checked ?{color: "#7D7A7A", textDecoration:"line-through"} :  {display:"inline-block", marginRight: "10px"}}>
           {this.props.itemDescription}
         </div>
+
         <div className="editModalContainer">
           <Button icon onClick={() => this.setState({sidebarVisible:!this.state.sidebarVisible})}>
             <div className="material-icons-outlined">edit</div>
           </Button>
           {/* <AddEditModal  isAddModal={false} {...this.props}/> */}
         </div>
+
         <div className="deleteButton">
           <DeleteModal/>
         </div>
@@ -57,8 +62,7 @@ const mapStateToProps = (state) => {
   }
 }
 const mapDispatchToProps = {
-  deleteItem: deleteItem, 
-  selectItem: selectItem
+  deleteItem: deleteItem
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ShoppingItem);

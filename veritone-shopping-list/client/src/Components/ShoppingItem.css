@@ -34,9 +34,5 @@
 .ui.checked.fitted.checkbox > label::after{
 	background: #4D81B7;
 	border-radius: 4px;
-	color:white;
-}
-
-.ui.checked.fitted.checkbox:indeterminate:focus~label:after{
-	color:white;
+	color:white !important;
 }
