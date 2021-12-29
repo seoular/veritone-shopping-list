@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {connect} from 'react-redux';
-import { Segment, Checkbox} from 'semantic-ui-react'
-import AddEditModal from './AddEditModal';
+import { Segment, Checkbox, Button} from 'semantic-ui-react'
+// import AddEditModal from './AddEditModal';
+import AddEditSidebar from './AddEditSidebar';
 import DeleteModal from './DeleteModal';
 import {deleteItem, selectItem} from '../Actions/ShoppingActions';
 import './ShoppingItem.css';
@@ -14,6 +15,7 @@ class ShoppingItem extends React.Component {
     
     this.state = {
       checked: false,
+      sidebarVisible: false,
     };
   }
   componentDidMount(){
@@ -34,11 +36,18 @@ class ShoppingItem extends React.Component {
           {this.props.itemDescription}
         </div>
         <div className="editModalContainer">
-          <AddEditModal  isAddModal={false} {...this.props}/>
+          <Button icon onClick={() => this.setState({sidebarVisible:!this.state.sidebarVisible})}>
+            <div className="material-icons-outlined">edit</div>
+          </Button>
+          {/* <AddEditModal  isAddModal={false} {...this.props}/> */}
         </div>
         <div className="deleteButton">
           <DeleteModal/>
         </div>
+
+        {/* we are incrementing the key here on all updates to the shopping list to rerender this component */}
+        <AddEditSidebar  toggleSidebar={() => this.setState({sidebarVisible:!this.state.sidebarVisible})} visible={this.state.sidebarVisible} isAddModal={false} {...this.props} />
+
       </Segment>      
     )
   }

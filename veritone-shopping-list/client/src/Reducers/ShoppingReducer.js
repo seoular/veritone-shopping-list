@@ -2,7 +2,8 @@
 const ShoppingReducer = (state, action) => {
   if (typeof state === 'undefined') {
     state = {
-      shoppingList: []      
+      shoppingList: [],
+      addKey: 0, 
 
     }
   }
@@ -20,6 +21,8 @@ const ShoppingReducer = (state, action) => {
       let newShoppingList3 = state.shoppingList.slice();
       newShoppingList3.splice(payload.itemID, 1, payload.newItem);      
       return {...state, shoppingList: newShoppingList3}
+    case 'INCREMENT_ADD_KEY':
+      return {...state,  addKey: state.addKey+1}
     case 'SELECT':
     default: return state;   
   }
